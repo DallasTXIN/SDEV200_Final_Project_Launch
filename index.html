@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="topic.css">
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Homepage</title>
+</head>
+<h1>University Of North Yankton, Ludendorff</h1>
+<div>
+<a href="index.html">Homepage</a>
+<a href="classes.html">Classes</a>
+</div>
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="pass"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pass" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember Me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="pass">Forgot <a href="forgotpass.html">password?</a></span>
+    </div>
+  </form>
+</div>
+<p>Thank you for coming to the homepage of the University Of North Yankton, Ludendorff website. This is where you'll see updates about upcoming events and classes. Keep it bookmarked to see anything before you miss it.</p>
+<p>We will officially open our doors for students in the fall semester in 2023.</p>
+</html>
